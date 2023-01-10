@@ -1,0 +1,26 @@
+// colors
+$color-header-bg:rgba(255, 255, 255, 1);
+$color-bg:#F2F2F2;
+$color-card-bg:rgba(255, 255, 255, 1);
+$color-text:rgba(17, 21, 23, 1);
+$color-search:rgba(132, 132, 132, 1);
+:root {
+    --color-header-bg: #{$color-header-bg};
+    --color-bg: #{$color-bg};
+    --color-card-bg: #{$color-card-bg};
+    --color-text: #{$color-text};
+    --color-search: #{$color-search};
+}
+
+.dark {
+    $color-header-bg: rgba(43, 56, 68, 1);
+    $color-bg: rgba(32, 44, 54, 1);
+    $color-card-bg: rgba(43, 56, 68, 1);
+    $color-text: rgba(255, 255, 255, 1);
+    $color-search: rgba(255, 255, 255, 1);
+    --color-header-bg: #{$color-header-bg};
+    --color-bg: #{$color-bg};
+    --color-card-bg: #{$color-card-bg};
+    --color-text: #{$color-text};
+    --color-search: #{$color-search};
+}

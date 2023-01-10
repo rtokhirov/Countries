@@ -1,0 +1,43 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    transition: all .50s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+main {
+    flex-grow: 1;
+}
+
+.container {
+    width: 100%;
+    max-width: 131rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+ul,
+ol {
+    list-style: none;
+}
