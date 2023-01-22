@@ -1,4 +1,10 @@
 @mixin responsive ($breakpoint) {
+    @if $breakpoint==mini-desktop {
+        @media screen and (max-width: 1050px) {
+            @content
+        }
+    }
+    ;
     @if $breakpoint==b-tablet {
         @media screen and (max-width: 730px) {
             @content

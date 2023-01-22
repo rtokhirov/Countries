@@ -35,6 +35,7 @@ request.addEventListener('readystatechange', () => {
         // console.log('Loading');
     } else if (request.readyState == 4) {
         sarala(JSON.parse(request.responseText));
+        console.log(JSON.parse(request.responseText));
         boshArray = [...JSON.parse(request.responseText)];
     }
 })
@@ -64,7 +65,7 @@ function chiqar(data) {
 
         mbDiv.innerHTML += `
             <div class="country">
-                <a class="country__img" href="#"><img src="${flag}"></a>
+                <a class="country__img" href="./about.html"><img src="${flag}"></a>
 
                 <div class="country__info">
                     <h2>${counrty}</h2>
@@ -82,7 +83,7 @@ function chiqar(data) {
 
 let hisobla = false;
 let regionSave = "All..."
-    // console.log(regionSave);
+    // console.log(regionSave); 
 regions.forEach(element => {
     element.addEventListener('click', () => {
         hisobla = true
@@ -117,7 +118,6 @@ function sarala(data) {
 
 
 searchText.addEventListener('input', () => {
-    // console.log(searchText.value);
     qidir(regArray)
 })
 
